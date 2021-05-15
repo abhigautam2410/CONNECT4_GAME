@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.agindustries.pl.Controller">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints maxWidth="308.4" minWidth="189.40001525878904" prefWidth="205.60000000000002" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    <RowConstraints />
+  </rowConstraints>
+   <children>
+      <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiskPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox prefHeight="400.0" prefWidth="226.0" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Pane prefHeight="125.0" prefWidth="206.0">
+               <children>
+                  <Button fx:id="setNameButton" layoutX="28.0" layoutY="87.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="set name" />
+                  <TextField fx:id="player1TextField" layoutX="28.0" layoutY="14.0" prefHeight="25.0" prefWidth="149.0" promptText="player one name" />
+                  <TextField fx:id="player2TextField" layoutX="28.0" layoutY="50.0" prefHeight="25.0" prefWidth="149.0" promptText="player two name" />
+               </children>
+            </Pane>
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="46.0" prefWidth="314.0" text="player one" textFill="#edecec">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="309.0" text="turn" textFill="#e5e1e1">
+               <font>
+                  <Font size="28.0" />
+               </font></Label>
+            <Region prefHeight="135.0" prefWidth="206.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
